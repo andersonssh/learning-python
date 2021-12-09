@@ -1,0 +1,26 @@
+seila velio: "pouha loko ksksks"
+
+testes:
+  teste1:
+    isso e massa
+  teste2:
+    isso e massa 2
+
+whati:
+  oi
+
+teste:
+  1
+
+data:
+  2020-01-03
+
+lista:
+  - nome: nometeste
+    cor: corteste
+  - nome: nometeste
+    cor: mt massa
+  - semdicionario
+  - comdicionariodelistas:
+      - teste: oi
+        massa: show
