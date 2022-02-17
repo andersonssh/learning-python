@@ -9,3 +9,4 @@ def cria_potencia(base):
 potencia_2 = cria_potencia(2)
 
 print(potencia_2(2))
+print(cria_potencia(2)(2))

@@ -1,5 +1,4 @@
 def decorator(funcao):
-    print('executei a func')
     def wrapper():
         print('Antes de executar a funcao')
         funcao()
