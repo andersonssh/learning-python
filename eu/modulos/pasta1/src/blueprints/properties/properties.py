@@ -1,4 +1,8 @@
 from eu.modulos.pasta1.arq_principal import variavel
 
 print(variavel)
-# o arquivo pode acessar pastas pai e irmas de pai atraves do path da pasta raiz do projeto
+# todos os arquivos podem acessar os arquivos filhos da pasta pai
+# diretamente atraves de um import nome_do_arquivo
+# pois o sys.path (objeto q o interpretador usa para visualizar os arquivos)
+# inclui a pasta raiz do projeto (onde o interpretador está rodando)
+# checar mais anotacoes na pasta "/modularizacao"
