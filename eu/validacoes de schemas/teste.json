@@ -1,0 +1,51 @@
+{
+  "title": "exemplo de titulo",
+  "description": "todo objeto pode receber o parametro -> additionalProperties",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "productId": {
+      "description": "O identificador unico para um produto",
+      "type": "integer"
+    },
+    "productName": {
+      "description": "Nome do produto",
+      "type": "string"
+    },
+    "price": {
+      "description": "Preco do produto",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "tags": {
+      "description": "Tags do produto",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "dimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lat": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "long": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        }
+      },
+      "required": [
+          "lat",
+          "long"
+        ]
+    }
+  },
+  "required": ["productId", "productName", "price"]
+}
