@@ -26,12 +26,16 @@
       "minItems": 1,
       "uniqueItems": true
     },
+    "option": {
+      "type": "string",
+      "enum": ["queijo", "carne"]
+    },
     "dimensions": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "lat": {
-          "type": "number",
+          "type": ["number", "string"],
           "minimum": -90,
           "maximum": 90
         },
